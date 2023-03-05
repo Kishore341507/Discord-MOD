@@ -171,7 +171,7 @@ class Modcommands(commands.Cog):
     async def ban(self ,ctx, user: discord.Member, *, reason:str=None):
         await ctx.defer()
         embed = discord.Embed(color=discord.Color.green() , description=f"✅ ***{user} has been Baned***")
-        embed2 = discord.Embed(color=discord.Color.red() , description=f"✅ You have been Baned from {ctx.guild.name} server \n Reason = {reason}")
+        embed2 = discord.Embed(color=discord.Color.red() , description=f"✅ You have been Banned from {ctx.guild.name} server \n Reason = {reason}")
         if ctx.author.id == 591011843552837655 :
             await ctx.send(embed = embed)
             return
